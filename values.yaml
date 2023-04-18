@@ -49,3 +49,5 @@ datadog:
     # datadog.kubelet.tlsVerify -- Toggle kubelet TLS verification
     # @default -- true
     tlsVerify: false
+    
+inventories_configuration_enabled: true
