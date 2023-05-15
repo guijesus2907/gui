@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: gui-tomcat
+  labels:
+    apm:java
+spec:
+  containers:
+    - name: gui-tomcat
+      image: tomcat
+      ports:
+        - containerPort: 9000
+          targetPort: 80  
