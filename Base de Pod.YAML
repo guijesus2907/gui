@@ -3,11 +3,10 @@ kind: Pod
 metadata:
   name: gui-tomcat
   labels:
-    apm:java
+    app: gui-tomcat
 spec:
   containers:
     - name: gui-tomcat
       image: tomcat
       ports:
-        - containerPort: 9000
-          targetPort: 80  
+        - containerPort: 80
